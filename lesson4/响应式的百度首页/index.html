@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>响应式百度首页</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/bitbug_favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" type="text/css" href="css/baidu.css" media="screen and (min-width: 768px)">
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 这里是pc端的内容 -->
+    <div class="pc">
+        <!-- top -->
+        <div class="wrapper">
+            <header>
+                <!-- 顶部导航 -->
+                <nav>
+                    <ul>
+                        <li><a href="https://www.nuomi.com/?cid=002540" target="_blank">糯米</a></li>
+                        <li><a href="http://news.baidu.com/" target="_blank">新闻</a></li>
+                        <li><a href="https://www.hao123.com/" target="_blank">hao123</a></li>
+                        <li><a href="http://map.baidu.com/" target="_blank">地图</a></li>
+                        <li><a href="http://v.baidu.com/" target="_blank">视频</a></li>
+                        <li><a href="http://tieba.baidu.com/" target="_blank">贴吧</a></li>
+                        <li><a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" class="login">登录</a></li>
+                        <li> <a href="javascript:;" class="set">设置</a></li>
+                        <li><a href="javascript:;" class="more">更多产品
+                <div id="box">
+                <ul>
+                    <li id="box_title">更多产品</li>
+                    <li id="miuse"><p>音乐</p></li>
+                    <li id="photo"><p>图片</p></li>
+                    <li id="know"><p>知道</p></li>
+                    <li id="library"><p>文库</p></li>
+                    <li id="wind_cloud"><p>风云榜</p></li>
+                    <li><p>全部产品&gt;&gt;<p></li>
+                </ul>   
+                </div></a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <!-- end top -->
+        <!-- middle -->
+        <div class="content">
+            <!-- 百度logo图片 -->
+            <img src="img/bd_logo1.png" alt="百度一下">
+            <!-- 搜索框以及按钮 -->
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <div class="search">
+                    <input type="text" name="wd"><span id="cam"></span></div>
+                <button type="submit">百度一下</button>
+            </form>
+        </div>
+        <!-- end middle -->
+        <!-- footer -->
+        <div class="footer_info">
+            <footer>
+                <div class="footer_left">
+                    <p>手机百度</p>
+                    <p>快人一步</p>
+                </div>
+                <div class="footer_middle">
+                    <p>百度糯米</p>
+                    <p>一元大餐</p>
+                </div>
+                <div class="footer_right">
+                    <p>
+                        <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a>
+                        <a href="http://home.baidu.com/">关于百度</a>
+                        <a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome">About Baidu</a>
+                        <a href="http://e.baidu.com/?refer=888&subsite=gd">百度推广</a>
+                    </p>
+                    <p>
+                        <span>&copy;2016 Baidu</span>
+                        <a href="https://www.baidu.com/duty/">使用百度前必读</a>
+                        <a href="http://help.baidu.com/">意见反馈</a>
+                        <span>京ICP证030173号</span>
+                        <span id="c_icon"></span>
+                    </p>
+                    <p>
+                        <span id="jgwablogo"></span>
+                        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a>
+                    </p>
+                    <p>
+                </div>
+            </footer>
+        </div>
+        <!-- end footer -->
+    </div>
+    <!-- 这里是移动端的内容 -->
+    <div class="mobile">       
+        <div id="page">
+            <div id="index-card">
+                <!-- 顶部天气 -->
+                <div id="weather">
+                    <div class="weather-outline">
+                        <div class="icon-weather-default"></div>
+                        <div class="weather-num">22°</div>
+                        <div class="weather-status">
+                            <p>深圳</p>
+                            <p>空气&nbsp;95</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 头部 -->
+                <div id="header">
+                    <!-- 个人信息 -->
+                    <div id="userinfo-wrap">
+                        <div id="login-wraps">
+                            <a id="login" class="icon-login" href="//m.baidu.com/usrprofile?action=home&model=user&ori=index"></a>
+                        </div>
+                    </div>
+                    <!-- logo -->
+                    <div id="logo" class="noTagColor">
+                        <img src="img/plus_logo.png" alt="百度一下,你就知道">
+                    </div>
+                    <!-- 搜索框 -->
+                    <form action="/s" class="se-form" id="index-form">
+                        <div class="con-wrap">
+                            <input type="text" id="index-kw" name="word" class="se-input" maxlength="64">
+                            <div class="se-inner">
+                                <div id="index-cross" class="cross" style="display: none;"></div>
+                                <button id="index-bn" class="se-bn" type="submit">百度一下</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- 中间导航 -->
+                    <div id="navs">
+                        <div id="ns-swipe" class="ns-swipe" style="visibility: visible;">
+                            <div class="ns-swipe-wrap">
+                                <div class="ns-swipe-item" style="width: 100%;">
+                                    <a class="ns-item menu-item-0" href="javascript:;">
+                                        <i class="ns-focus ns-icon"></i>
+                                        <span class="ns-text">关注</span>
+                                    </a>
+                                    <a class="ns-item" href="http://m.news.baidu.com/news?fr=mohome&ssid=0&from=&uid=&pu=sz%40224_220%2Cta%40iphone___3_537&bd_page_type=1">
+                                        <i class="ns-news ns-icon"></i>
+                                        <span class="ns-text">新闻</span>
+                                    </a>
+                                    <a class="ns-item" href="http://dushu.m.baidu.com">
+                                        <i class="ns-novel ns-icon"></i>
+                                        <span class="ns-text">小说</span>
+                                    </a>
+                                    <a class="ns-item" href="http://video.m.baidu.com/?from=wise_nav">
+                                        <i class="ns-video ns-icon"></i>
+                                        <span class="ns-text">视频</span>
+                                    </a>
+                                    <a class="ns-item" href="https://m.nuomi.com/?cid=wise_shouye_nuomi">
+                                        <i class="ns-life ns-icon"></i>
+                                        <span class="ns-text">糯米</span>
+                                    </a>
+                                    <a class="ns-item" href="http://map.baidu.com/mobile/webapp/index/index/?itj=45&wtj=wi&ssid=0&from=&uid=&pu=sz%40224_220%2Cta%40iphone___3_537&bd_page_type=1">
+                                        <i class="ns-map ns-icon"></i>
+                                        <span class="ns-text">地图</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="ns-swipe-menu">
+                                <li class="ns-swipe-tab ns-swipe-tab-active"></li>
+                                <li class="ns-swipe-tab ns-swipe-tab-mr0"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 新闻主体 -->
+                <div class="blank-frame">
+                    <div id="tab_news">
+                        <div class="tab-news-content water-container">
+                            <div class="news-list-wrapper"></div>
+                            <div class="news-list-wrapper">
+                                <div class="rec-item news-item tpl-3">
+                                    <a href="" class="inner-item">
+                                        <div class="text-content">
+                                            <h2>他们用了整整5年的时间拍下了这部豆瓣9.9分的巨作，我想和每个热爱生命的你一起看它</h2>
+                                            <span class="hotRec hotRec1"></span>
+                                        </div>
+                                        <div class="pic-content">
+                                            <div class="img-wrap">
+                                                <img src="img/u=927175654,1933100895&fm=170&s=5888E41117484D4B4EE52CDA0100C0B2&w=218&h=146&img.JPEG" alt="">
+                                            </div>
+                                            <div class="img-wrap">
+                                                <img src="img/u=2927056401,929033871&fm=170&s=6888F012071845C84A7D00DA010080B2&w=218&h=146&img.JPEG" alt="img/u=927175654,1933100895&fm=170&s=5888E41117484D4B4EE52CDA0100C0B2&w=218&h=146&img.JPEG">
+                                            </div>
+                                            <div class="img-wrap">
+                                                <img src="img/u=2140122296,200940060&fm=170&s=D6A7D44A42B4BC7606E68BA80300600D&w=218&h=146&img.GIF" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="news-from">
+                                            <span class="src-net">搜狐旅游</span>
+                                            <span class="src-time">12:42</span>
+                                            <span class="src-icon-hot">热点</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="rec-item news-item tpl-3">
+                                    <a href="" class="inner-item">
+                                        <div class="text-content">
+                                            <h2>邓超被认成彭于晏？将错就错赠签名，字丑就不说了还写错了一个</h2>
+                                            <span class="hotRec hotRec1"></span>
+                                        </div>
+                                        <div class="pic-content">
+                                            <div class="img-wrap">
+                                                <img src="img/new21.JPEG" alt="">
+                                            </div>
+                                            <div class="img-wrap">
+                                                <img src="img/new22.JPEG">
+                                            </div>
+                                            <div class="img-wrap">
+                                                <img src="img/new23.JPEG" alt="">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="rec-item news-item tpl-3">
+                                    <a href="" class="inner-item">
+                                        <div class="text-content">
+                                            <h2>如果有一天，你厌倦了自己的工作，敢不敢这样……</h2>
+                                            <span class="hotRec hotRec1"></span>
+                                        </div>
+                                        <div class="pic-content">
+                                            <div class="img-wrap">
+                                                <img src="img/new32.JPEG" alt="">
+                                            </div>
+                                            <div class="img-wrap">
+                                                <img src="img/new32.JPEG">
+                                            </div>
+                                            <div class="img-wrap">
+                                                <img src="img/new33.JPEG" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="news-from">
+                                            <span class="src-net">搜狐旅游</span>
+                                            <span class="src-time">12:42</span>
+                                            <span class="src-icon-hot">热点</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="rec-item news-item tpl-2">
+                                    <a href="" class="inner-item clr">
+                                        <div class="info-content">
+                                            <div class="text-content">
+                                                <h2>44分屠杀！这下知道东部谁才是能PK骑士的队 </h2>
+                                                <span class="hotRec hotRec0"></span>
+                                            </div>
+                                            <div class="news-from">
+                                                <span class="src-net">新浪体育</span>
+                                                <span class="src-time">12:41</span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                        <div class="pic-content">
+                                            <div class="news-img-padding">
+                                                <img src="img/new4.JPEG" alt="">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 底部信息 -->
+                <div id="bottom">
+                    <div id="foot">
+                        <div>
+                            <a href="http://ufosdk.baidu.com/?m=Client&a=commonsubmit&appid=517&activityId=1&needEmail=false&bw=05F8F3DE9611E44CBA9ABC82CD9A6632&kw=&tn=iphone&pageid=6">
+                                <i class="icon-feedback"></i> 用户反馈
+                            </a>
+                        </div>
+                        <a id="index-copyright" href="https://www.baidu.com/duty/wise/wise_index.html">使用百度前必读&nbsp;Baidu&nbsp;京ICP证030173号</a>
+                        <a class="recordcode" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">
+                            <i></i> 京公网安备11000002000001号
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
