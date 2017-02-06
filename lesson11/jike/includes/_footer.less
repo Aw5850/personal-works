@@ -1,0 +1,171 @@
+@import url(../variables/common_var.less);
+@import url(../variables/footer_var.less);
+/*底部信息*/
+footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-top: 1px solid #E8E2E2;
+    .footerDiv {
+        background: #fff;
+        position: relative;
+    }
+}
+
+.jkinfo {
+    height: 215px;
+    padding-left: 224px;
+    padding-top: 25px;
+    border-bottom: 1px solid #f5f5f5;
+    .jk-logo {
+        position: absolute;
+        left: 0;
+        top: 25px;
+        bottom: 0;
+        width: 160px;
+        display: inline-block;
+        img {
+            width: 109px;
+            height: 40px;
+        }
+        p {
+            font-size: 12px;
+            color: #999;
+            margin-top: 20px;
+        }
+    }
+    dl {
+        width: 135px;
+        float: left;
+        color: #808080;
+        dt {
+            font-size: 14px;
+            line-height: 30px;
+        }
+        dd {
+            font-size: 12px;
+            line-height: 30px;
+            a {
+                color: #999999;
+                &:hover {
+                    color: @green;
+                }
+            }
+        }
+    }
+}
+
+.jk-down {
+    font-size: 14px;
+    width: 175px;
+    float: left;
+    margin-left: 60px;
+    color: #808080;
+    .hot-tel {
+        margin-bottom: 20px;
+    }
+    .downCon {
+        position: relative;
+        width: 100px;
+        height: 30px;
+        padding-left: 40px;
+        line-height: 30px;
+        border: 1px solid #eeeeee;
+        margin-bottom: 10px;
+        img {
+            display: block;
+            width: 115px;
+            height: 153px;
+            position: absolute;
+            top: -157px;
+            left: 12px;
+            z-index: 2;
+            display: none;
+            &:hover img {
+                display: block;
+            }
+        }
+    }
+    .down-ios {
+        background: url(../img/icon-down-ios.png) no-repeat left;
+        background-size: 30px 30px;
+    }
+    .down-and {
+        background: url(../img/icon-down-and.png) no-repeat left;
+        background-size: 30px 30px;
+    }
+}
+
+
+
+.copyinfo {
+    margin: 12px auto;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    p {
+        height: 15px;
+        line-height: 15px;
+        display: inline-block;
+    }
+    .down-wechat {
+        background: url(../img/icon-down-wechat.png) no-repeat;
+        .wechat-sina();
+    }
+    .down-sina {
+        background: url(../img/icon-down-sina.png) no-repeat;
+        .wechat-sina();
+        margin-right: 10px;
+    }
+    .bottom_logo {
+        display: block;
+        img {
+            width: 60px;
+            height: 22px;
+            margin: 9px auto 0;
+        }
+    }
+}
+
+
+/*置顶*/
+
+.gotop {
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 50px;
+    width: 34px;
+    text-align: center;
+    z-index: 2000;
+    span.top {
+        background: url(../img/gotop.jpg) 0 0 no-repeat;
+        background-size: 34px 103px;
+        height: 34px;
+    }
+    span.jk-app {
+        position: relative;
+        display: block;
+        background: url(../img/phone-1.png) center center no-repeat;
+        background-size: 12px 24px;
+        height: 35px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+}
+
+.appewm {
+    background: url(../img/appewm.png) center center no-repeat;
+    background-size: 100%;
+    width: 126px;
+    height: 159px;
+    position: absolute;
+    z-index: 2100;
+    left: -126px;
+    top: -70px;
+    display: none;
+}
+
+.gotop span.jk-app:hover .appewm {
+    display: block;
+}
