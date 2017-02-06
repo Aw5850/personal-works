@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+#container div {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    box-shadow: 2px 1px 5px 2px #C7C3AD;
+}
+/*div的位置*/
+.square_1,.square_5{
+    margin:0 auto;
+}
+.square_2,.square_3,.square_4 {
+    float: left;
+}
+
+/*div的背景*/
+.square_1 {
+    background-color: #26F1B3;
+}
+.square_2 {
+    background-color: #0000FF;
+}
+.square_3 {
+    background: url(../img/animal_blue_fish_64px.ico) no-repeat center;
+    background-color: #D4C8DE;
+}
+.square_4 {
+    background-color: #6F2B62;
+}
+.square_5 {
+    clear: both;
+    background-color: #F23822;
+}
