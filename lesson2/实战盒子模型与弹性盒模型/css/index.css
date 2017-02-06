@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*正常盒子与怪异盒子对比*/
+
+.box_wrap {
+    width: 160px;
+    height: 320px;
+}
+
+.box {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: green;
+    border: 5px solid red;
+    box-shadow: 4px 4px 18px 1px #8e8e8e;
+}
+
+.content {
+    width: 100px;
+    height: 100px;
+    overflow-y: scroll;
+    background-color: orange;
+}
+
+.box1 {
+    margin: 10px;
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    background-color: green;
+    border: 5px solid red;
+    box-sizing: border-box;
+}
+
+.content1 {
+    width: 100px;
+    height: 100px;
+    overflow-y: scroll;
+    background-color: orange;
+}
+
+
+/*仿报纸排版*/
+
+.fiex {
+    height: 720px;
+}
+
+.fiex img {
+    width: 150px;
+}
+
+.col {
+    -webkit-column-count: 2;
+    -webkit-column-rule-width: 1px;
+    -webkit-column-rule-style: dotted;
+    -moz-column-count: 2;
+    -moz-column-rule-width: 1px;
+    -moz-column-rule-style: dotted;
+    column-count: 2;
+    column-rule-width: 1px;
+    column-rule-style: dotted;      
+}
+
+.center {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+}
+
+.fiexbox {
+    height: 500px;
+    margin-top: 20px;
+}
+
+.con {
+    height: 200px;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+}
+
+.first {
+    height: 50px;
+    -webkit-flex: 1;
+    -webkit-order: 2;
+    background-color: red;
+}
+
+.second {
+    height: 50px;
+    -webkit-flex: 1;
+    -webkit-order: 3;
+    background-color: blue;
+}
+
+.three {
+    height: 100px;
+    -webkit-flex: 1;
+    -webkit-order: 1;
+    background-color: green;
+}
+
+.ver {
+    margin-top: 10px;
+    height: 400px;
+    display: -webkit-flex;
+}
