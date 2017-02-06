@@ -1,0 +1,30 @@
+ul li {
+    list-style: none;
+}
+
+/*主体内容*/
+#main {
+    margin-top: 54px;
+}
+
+/*左侧导航*/
+.sidebar{
+	background: #DDD9D9;
+}
+.list{
+	padding-top: 4px;
+}
+.list li a:hover{
+	color:red;
+}
+.nav-sidebar > .title > a,
+.nav-sidebar > .title > a:hover,
+.nav-sidebar > .title > a:focus {
+    color: #fff;
+    background-color: #428bca;
+}
+
+/*右侧管理控制台*/
+.page-header{
+	margin-top: 14px;
+}

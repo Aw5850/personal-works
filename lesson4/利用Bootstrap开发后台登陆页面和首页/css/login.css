@@ -1,0 +1,50 @@
+body {
+    font-family: "Microsoft Yahei";
+    width: 100%;
+    overflow: hidden;
+}
+
+/*导航背景重置*/
+.navbar-default {
+    background: #C5FBA3;
+    border: none;
+}
+/*主体内容*/
+.wrap {
+    border: 10px solid rgba(4, 150, 19, 0.37);
+    border-radius: 8px;
+}
+.main {
+    border: 2px solid #fff;
+    padding: 5px;
+    background: #C5FBA3;
+}
+
+/*导航标题*/
+.title {
+    font-size: 25px;
+    color: #45A32B;
+}
+/*水平线*/
+.main hr {
+    border: 0;
+    height: 1px;
+    margin-top: 2px;
+    background-color: #ACF585;
+}
+/*表单控件*/
+.form-control {
+    display: inline-block;
+    width: 200px;
+}
+/*登录按钮*/
+.btn-success {
+    width: 60px;
+}
+
+/*星号颜色*/
+.red {
+    display: inline-block;
+    margin-left: 10px;
+    color: red;
+}
