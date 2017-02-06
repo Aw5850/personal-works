@@ -1,0 +1,108 @@
+*{
+	margin:0;
+	padding:0;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;	
+}
+th,tr,td{
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+tr{
+	display: table-row;
+}
+td{
+	display: table-cell;
+}
+input{
+	border:0;
+	outline:none;
+	font:13.33px Arial;
+}
+.container{
+	text-align: center;
+	width: 437px;
+	height: 448px;
+	margin:0 auto;
+}
+.container h1{
+	font-family:Arial;
+}
+/*计算器总体*/
+.calculatoe_base{
+	
+	background:url(../img/siverbg.png) no-repeat;
+}
+/*计算器计算结果显示区域*/
+.calculator_table{
+	width: 100%;
+	margin:0 auto;
+
+}
+.calculator_table td{
+	text-align: center;
+}
+.calculatoe_base .displayCss{
+	width: 390px;
+	height: 53px;
+	color: #000;
+	text-align: right;
+	font-size: 40px;
+	padding: 0 5px;
+}
+/*数字运算符操作区*/
+.calculatoe_base #base_table_main{
+	width: 100%;
+}
+.calculatoe_base #base_table_main td{
+	height: 53px;
+}
+/*按钮样式*/
+.baseBtnCommonCss{
+	color: #fff;
+	width: 94px;
+	height: 44px;
+	background: url(../img/d1btn.gif) no-repeat 0 -44px ;
+	font-size: 14px;
+}
+.baseBtnCss1{
+	background: url(../img/d0btn.gif) no-repeat 0 -44px;
+}
+.baseBtnCss2{
+	background: url(../img/d2btn.gif) no-repeat 0 -44px;
+	font-size: 20px;
+}
+.baseBtnCss3{
+	background: url(../img/d3btn.gif) no-repeat 0 -44px;
+	font-size: 16px;
+}
+.baseBtnCss4{
+	background: url(../img/d4btn.gif) no-repeat 0 -44px;
+	font-size: 20px;
+}
+/*按钮鼠标按下时背景变化*/
+.baseBtnCommonCss0{
+	color: #fff;
+	width: 94px;
+	height: 44px;
+	background: url(../img/d1btn.gif) no-repeat;
+	font-size: 14px;
+}
+.baseBtnCss11{
+	background: url(../img/d0btn.gif) no-repeat;
+}
+.baseBtnCss22{
+	background: url(../img/d2btn.gif) no-repeat;
+	font-size: 20px;
+}
+.baseBtnCss33{
+	background: url(../img/d3btn.gif) no-repeat ;
+	font-size: 16px;
+}
+.baseBtnCss44{
+	background: url(../img/d4btn.gif) no-repeat ;
+	font-size: 20px;
+}

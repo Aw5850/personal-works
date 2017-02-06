@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>开发完整计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+<div class="container">
+    <h1>计算器</h1>
+    <div id="main" class="calculatoe_base">
+    <!-- 计算器计算结果显示区域 begin-->
+        <table class="calculator_table">
+            <tbody>
+                <tr>
+                    <td colspan="3" style="height: 17px;"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="height: 53px;">
+                        <input type="text" name="" id="resultIpt" class="displayCss" style="height: 53px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="height: 40px;"></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 计算器计算结果显示区域 end-->
+       <!--  数字运算符区域表格 begin-->
+        <table id="base_table_main" class="calculator_table" style="width: 96%">
+            <tbody>
+            <!-- 第一行 -->
+                <tr>
+                    <td>
+                        <input type="button" id="cc" onclick="inputFuhao(this)" onmousedown="changeBg(this.id,0)" onmouseup="changeBgUp(this.id,0)" value="√￣" class="baseBtnCommonCss">
+                    </td>
+                    <td>
+                        <input type="button" id="outcc" onmousedown="changeBg(this.id,0)" onmouseup="changeBgUp(this.id,0)" value="存储" class="baseBtnCommonCss">
+                    </td>
+                    <td>
+                        <input type="button" onclick="tuiGe()" onmousedown="changeBg(this.id,-1)" onmouseup="changeBgUp(this.id,-1)" id="tuiGe" value="退格" class="baseBtnCommonCss baseBtnCss1">
+                    </td>
+                    <td>
+                        <input type="button" onclick="clearTo()" onmousedown="changeBg(this.id,-1)" onmouseup="changeBgUp(this.id,-1)" id="Del" value="清屏" class="baseBtnCommonCss baseBtnCss1">
+                    </td>
+                </tr>
+                <!-- 第二行 -->
+               <tr>
+                    <td>
+                        <input type="button" onclick="inputFuhao(this)" id="square" onmousedown="changeBg(this.id,0)" onmouseup="changeBgUp(this.id,0)" value="cos" class="baseBtnCommonCss">
+                    </td>
+                    <td>
+                        <input type="button" onclick="inputFuhao(this)" id="cube" onmousedown="changeBg(this.id,0)" onmouseup="changeBgUp(this.id,0)" value="sin" class="baseBtnCommonCss">
+                    </td>
+                    <td>
+                        <input type="button" onclick="inputFuhao(this)" id="cube2" onmousedown="changeBg(this.id,0)" onmouseup="changeBgUp(this.id,0)" value="tan" class="baseBtnCommonCss">
+                    </td>
+                    <td>
+                        <input type="button" id="simpleDivi" onclick="inputOper(this)" onmousedown="changeBg(this.id,-2)" onmouseup="changeBgUp(this.id,-2)" value="÷" class="baseBtnCommonCss baseBtnCss2">
+                    </td>
+                </tr>
+                <!-- 第三行 -->
+                <tr>
+                    <td>
+                        <input type="button" id="simple7" onclick="inputEvent(this.id)" onmousedown="changeBg(this.id,-3)" onmouseup="changeBgUp(this.id,-3)" value="7" class="baseBtnCommonCss baseBtnCss3">
+                    </td>
+                    <td>
+                        <input type="button" id="simple8" onclick="inputEvent(this.id)" onmousedown="changeBg(this.id,-3)" onmouseup="changeBgUp(this.id,-3)" value="8" class="baseBtnCommonCss baseBtnCss3">
+                    </td>
+                    <td>
+                        <input type="button" id="simple9" onclick="inputEvent(this.id)" onmousedown="changeBg(this.id,-3)" onmouseup="changeBgUp(this.id,-3)" value="9" class="baseBtnCommonCss baseBtnCss3">
+                    </td>
+                    <td>
+                        <input type="button" id="simpleMulti" onclick="inputOper(this)" onmousedown="changeBg(this.id,-2)" onmouseup="changeBgUp(this.id,-2)" value="×" class="baseBtnCommonCss baseBtnCss2">
+                    </td>
+                </tr>
+                <!-- 第四行 -->
+               <tr>
+                    <td>
+                        <input type="button" id="simple4"  onclick="inputEvent(this.id)" onmousedown="changeBg(this.id,-3)" onmouseup="changeBgUp(this.id,-3)" value="4" class="baseBtnCommonCss baseBtnCss3">
+                    </td>
+                    <td>
+                        <input type="button" id="simple5"  onclick="inputEvent(this.id)" onmousedown="changeBg(this.id,-3)" onmouseup="changeBgUp(this.id,-3)" value="5" class="baseBtnCommonCss baseBtnCss3">
+                    </td>
+                    <td>
+                        <input type="button" id="simple6"  onclick="inputEvent(this.id)" onmousedown="changeBg(this.id,-3)" onmouseup="changeBgUp(this.id,-3)" value="6" class="baseBtnCommonCss baseBtnCss3">
+                    </td>
+                    <td>
+                        <input type="button" id="simpleSubtr" onclick="inputOper(this)" onmousedown="changeBg(this.id,-2)" onmouseup="changeBgUp(this.id,-2)" value="-" class="baseBtnCommonCss baseBtnCss2">
+                    </td>
+                </tr>
+                <!-- 第五行 -->
+                <tr>
+                    <td>
+                        <input type="button" id="simple1" onclick="inputEvent(this.id)" onmousedown="changeBg(this.id,-3)" onmouseup="changeBgUp(this.id,-3)" value="1" class="baseBtnCommonCss baseBtnCss3" >
+                    </td>
+                    <td>
+                        <input type="button" id="simple2" onclick="inputEvent(this.id)" onmousedown="changeBg(this.id,-3)" onmouseup="changeBgUp(this.id,-3)" value="2" class="baseBtnCommonCss baseBtnCss3">
+                    </td>
+                    <td>
+                        <input type="button" id="simple3" onclick="inputEvent(this.id)" onmousedown="changeBg(this.id,-3)" onmouseup="changeBgUp(this.id,-3)" value="3" class="baseBtnCommonCss baseBtnCss3">
+                    </td>
+                    <td>
+                        <input type="button" id="simpleAdd" onclick="inputOper(this)" onmousedown="changeBg(this.id,-2)" onmouseup="changeBgUp(this.id,-2)" value="+" class="baseBtnCommonCss baseBtnCss2">
+                    </td>
+                </tr>
+                <!-- 第六行 -->
+                <tr>
+                    <td>
+                        <input type="button" id="simple0" onclick="inputEvent(this.id)" onmousedown="changeBg(this.id,-3)" onmouseup="changeBgUp(this.id,-3)" value="0" class="baseBtnCommonCss baseBtnCss3">
+                    </td>
+                    <td>
+                        <input type="button" id="simpleDot" onclick="inputEvent(this.id)" onmousedown="changeBg(this.id,-3)" onmouseup="changeBgUp(this.id,-3)" value="." class="baseBtnCommonCss baseBtnCss3">
+                    </td>
+                    <td>
+                        <input type="button" onclick="jian(this)" id="minus" onmousedown="changeBg(this.id,-3)" onmouseup="changeBgUp(this.id,-3)" value="+/-" class="baseBtnCommonCss baseBtnCss3">
+                    </td>
+                    <td>
+                        <input type="button" id="equality" onclick="inputEquel(this)" onmousedown="changeBg(this.id,-4)" onmouseup="changeBgUp(this.id,-4)" value="=" class="baseBtnCommonCss baseBtnCss4">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--  数字运算符区域表格 end-->
+    </div>
+    </div>
+        <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
