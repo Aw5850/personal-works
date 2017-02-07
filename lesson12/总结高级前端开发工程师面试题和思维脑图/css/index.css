@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+	width: 100%;
+	height: 100%;
+    font-family: "Microsoft Yahei";
+}
+ul li {
+    list-style: none;
+}
+
+.wrapper {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    background: #D2EED2;
+    padding-top: 20px;
+    margin-top: 5px;
+}
+.wrapper h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper hr {
+    width: 500px;
+    margin: 0 auto;
+}
+/*备注说明*/
+.remark {
+    height: 38px;
+    line-height: 38px;
+    margin-left: 10px;
+}
+.remark span {
+    font-weight: bold;
+    color: #ff0000;
+    margin-right: 5px;
+}
+
+.title {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    color: #35b558;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.interview{
+    margin: 5px 0;
+    background: #D3D8D4;
+}
+
+.interview:hover .content {
+    display: block;
+}
+
+.content{
+    background: #fff;
+    margin: 10px;
+    color: #585656;
+    font-size: 14px;
+    display: none;
+}
+
+.content p,
+.content dl,
+.content ul,
+.content img {
+    padding: 0 30px;
+}
+
+.content ol {
+    padding: 0 50px;
+}
+
+.content h4 {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #222121;
+    padding-left: 20px;
+}
