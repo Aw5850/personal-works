@@ -19,11 +19,30 @@
 百度相关的实战
   * <strong>开发百度完整版:</strong>（html/css/js/换肤/兼容所有浏览器/响应式/首页登陆之后完整版）
   * <strong>开发手机版本的百度新闻:</strong>php+MySQL结合，实现后台管理、后台登录。
-  * <strong>开发Nodejs版本的百度新闻系统：</strong> 使用Express框架
-  * 利用FIS3重组百度首页
-  * 用设计模式改善百度js代码
+  * <strong>开发Nodejs版本的百度新闻系统:</strong> 使用Express框架
+  * <strong>利用FIS3重组百度首页</strong>
+  * <strong>用设计模式改善百度js代码</strong>
   
 极客学院首页完整版
-  *  <strong>开发新版极客学院首页：</strong>利用HTML、CSS相关知识
-  * 极客学院官网二级菜单页面-课程库页面：利用jquery知识
-  * 利用less改善极客学院首页CSS
+  * <strong>开发新版极客学院首页:</strong>主要运用HTML、CSS相关知识
+  * <strong>极客学院官网二级菜单页面-课程库页面:</strong>主要运用jquery相关知识
+  * <strong>利用less改善极客学院首页CSS</strong>
+  
+##具备能力
+* 熟悉掌握HTML，CSS，js等Web前端编程技术，熟练使用DIV+CSS布局；
+* 熟悉掌握HTML5 语义化标签编程和 CSS3 结构选择器和动画并加以使用；
+* 熟悉HTML5新增的API，熟练使用CSS3的过渡/变换/媒体查询等新特性；
+* 熟悉掌握CSS主流框架bootstrap，能够完成响应式、自适应等常见布局；
+* 掌握JavaScript的基本语法，了解原生的DOM和BOM；
+* 掌握JS主流框架Jquery、Jquery官方提供的常用组件，以及Jquery的基础上封装自定义组件；
+* 了解常见的前端兼容处理、性能优化知识和技巧； 
+* 了解Nodejs工作原理，以及常用的框架express，实现后台服务器的搭建； 
+* 了解并会使用CSS预处理器Less和Sass；了解Gulp工作流工具，并在学习使用中；
+* 具备较强的学习能力和主动性，有良好的时间和流程意识。
+
+##职业方向
+从事IT行业，努力向全栈工程师方向发展；
+
+##为什么选择学习web前端
+主要是因为兴趣，喜欢这个思考的过程。
+
