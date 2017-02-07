@@ -16,8 +16,7 @@
 * [任务 12: 掌握JavaScript常用设计模式](https://github.com/Aw5850/personal-works/tree/master/lesson12) 
 
 ##主要作品
-* 开发百度完整版：
->（html/css/js/换肤/兼容所有浏览器/响应式/首页登陆之后完整版）
+* <strong>开发百度完整版</strong>：（html/css/js/换肤/兼容所有浏览器/响应式/首页登陆之后完整版）
 * 开发手机版本的百度新闻
 >php+MySQL结合，实现后台管理、后台登录。
 * 开发Nodejs版本的百度新闻系统 使用Express框架
