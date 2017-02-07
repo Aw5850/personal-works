@@ -16,9 +16,14 @@
 * [任务 12: 掌握JavaScript常用设计模式](https://github.com/Aw5850/personal-works/tree/master/lesson12) 
 
 ##主要作品
-* <strong>开发百度完整版</strong>：（html/css/js/换肤/兼容所有浏览器/响应式/首页登陆之后完整版）
-* 开发手机版本的百度新闻
->php+MySQL结合，实现后台管理、后台登录。
-* 开发Nodejs版本的百度新闻系统 使用Express框架
-* 利用FIS3重组百度首页
-* 用设计模式改善百度js代码
+百度相关的实战
+  * <strong>开发百度完整版:</strong>（html/css/js/换肤/兼容所有浏览器/响应式/首页登陆之后完整版）
+  * <strong>开发手机版本的百度新闻:</strong>php+MySQL结合，实现后台管理、后台登录。
+  * <strong>开发Nodejs版本的百度新闻系统：</strong> 使用Express框架
+  * 利用FIS3重组百度首页
+  * 用设计模式改善百度js代码
+  
+极客学院首页完整版
+  *  <strong>开发新版极客学院首页：</strong>利用HTML、CSS相关知识
+  * 极客学院官网二级菜单页面-课程库页面：利用jquery知识
+  * 利用less改善极客学院首页CSS
